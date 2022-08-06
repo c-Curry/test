@@ -1,0 +1,63 @@
+<!-- 声明HTML5 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- meta 元标签  charset 编码格式 -->
+		<meta charset="utf-8">
+		<title>网页设计</title>
+		<!-- CSS外部样式表 -->
+		<link rel="stylesheet" type="text/css" href="CSS/Style.css"/>
+	
+		<style>
+			/* 通用选择器 */
+			*{
+				color: fuchsia;
+				font-size: 20px;
+			}
+			/* 标签选择器、 */
+			h2{
+				color: green;
+				font-size: 20px;
+			}
+			/* 分组选择器 */
+			h1,h2,h3{
+				color: #FF0099;
+			}
+			 /* 类选择器 类名称前加上. */
+			.forcolor{
+				color: blue;
+			}
+			
+			/* id选择器 id名称前加上#  */
+			#Font{
+				color: orange;
+				/* 设置字体大小：font-size */
+				font-size: 20px;
+			}
+			
+			.forFont{
+				font-size: 20px;
+				color: red;
+			}
+			
+			/* 设备背景颜色background-color */
+			#forbody{
+				background-color: lightgreen;
+			}
+			
+		</style>
+	</head>
+	<body id="forbody">
+		<!-- br 是一个换行标签 -->
+		大家好，我是陈冲。<br>
+		请欣赏一首很经典的唐诗。
+		<h1 align="center">春晓</h1>
+		<h3 align="center">作者：孟浩然</h3>
+		<!-- class 引用类选择器 ，引用多个类选择器，就近原则 -->
+		<h2 align="center" class="forcolor forFont">春眠不觉晓，</h2>
+		<h2 align="center" class="forFont">处处闻啼鸟。</h2>
+		<!-- id 引用id选择器；同时引用类和id选择器：优先级  id选择器>类选择器>标签选择器>通用选择器 -->
+		<h2 align="center" class="forcolor" id="Font">夜来风雨声，</h2>
+		<h2 align="center" class="forcolor">花落知多少。</h2>
+	</body>
+</html>
